@@ -1,5 +1,5 @@
 module.exports = {
-    user: [
+    usersArray: [
     { id: 1 , name: 'Sabaresh'},
     { id: 2 , name: 'Gokul'},
     { id: 3 , name: 'Subash'},

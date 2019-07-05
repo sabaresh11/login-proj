@@ -3,11 +3,11 @@ const app = express();
 const PORT = 5000 || process.env.PORT
 
 const welcome = require('./routes/welcome');
-const allUsers = require('./routes/users');
+const Users = require('./routes/users');
 
 app.use(express.json());
 app.use('/', welcome);
-app.use('/api/user', allUsers);
+app.use('/api/', Users);
 
 app.listen(PORT, ()=> console.log(`Server running on port ${PORT}`));
 
